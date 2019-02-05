@@ -142,7 +142,7 @@ EOF
 }
 
 resource "aws_lambda_function" "lambda_func" {
-  function_name = "lambdaTos3"
+  function_name = "lambda-To-s3"
   filename = "lambda_function_s3.zip"
   handler = "test_py.sample"
   role = "${aws_iam_role.lambda_role.arn}"

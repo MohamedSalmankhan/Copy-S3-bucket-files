@@ -124,7 +124,7 @@ resource "aws_iam_role_policy" "s3_policy_role" {
 POLICY
 }
 resource "aws_iam_role" "lambda_role" {
-  name = "lambda-s3"
+  name = "lambda-s3-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
